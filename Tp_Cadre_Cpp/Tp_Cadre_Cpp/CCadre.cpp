@@ -156,8 +156,8 @@ bool CCadre::isCarre()
 	}
 }
 
-void CCadre::rotation(float flt_angle)
+void CCadre::rotation(float flt_angle, float flt_x1, float flt_y1)
 {
-	this->flt_x = (this->flt_x - 0) * cos(flt_angle * PI / 180) + (this->flt_y - 0) * sin(flt_angle * PI / 180 + 0);
-	this->flt_y = (this->flt_y - 0) * sin(flt_angle * PI / 180) + (this->flt_x - 0) * cos(flt_angle * PI / 180 + 0);
+	this->flt_x = (flt_x1 - this->flt_x) * cos(flt_angle * PI / 180) + (flt_y1 - this->flt_y) * sin(flt_angle * PI / 180 + 0);
+	this->flt_y = (flt_y1 - this->flt_y) * sin(flt_angle * PI / 180) + (flt_x1 - this->flt_x) * cos(flt_angle * PI / 180 + 0);
 }

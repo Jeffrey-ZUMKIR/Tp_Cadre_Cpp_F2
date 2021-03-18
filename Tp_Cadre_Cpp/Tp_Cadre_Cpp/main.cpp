@@ -37,6 +37,9 @@ int main() {
 	else {
 		cout << "Ce n'est pas un carré!" << endl;
 	}
+
+	c1.rotation(2, 1, 2);
+	c1.afficheLog();
 	
 
 	delete[] pt_motif;

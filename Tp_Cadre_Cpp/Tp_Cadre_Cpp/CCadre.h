@@ -52,6 +52,6 @@ public:
 	bool isCarre();
 
 	//Rotation
-	void rotation(float);
+	void rotation(float, float, float);
 	
 };
